@@ -1,0 +1,84 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+*.log
+*.lock
+
+# Metro
+.metro-health-check*
+.expo/
+.expo-shared/
+
+# Build outputs
+android/app/build/
+android/.gradle/
+ios/Pods/
+ios/build/
+build/
+
+# VSCode
+.vscode/
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcworkspace
+*.xcuserstate
+*.xcsettings
+*.hmap
+*.ipa
+*.xcode.env.local
+*.xccheckout
+*.moved-aside
+DerivedData/
+xcuserdata/
+
+# IntelliJ / Android Studio
+.idea/
+.gradle/
+local.properties
+*.iml
+.cxx/
+*.keystore
+!debug.keystore
+.kotlin/
+
+# Ruby / CocoaPods
+/vendor/bundle/
+**/Pods/
+
+# Testing
+coverage/
+*.hprof
+
+# Fastlane
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots
+**/fastlane/test_output
+
+# Yarn 2+
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Bundle artifact
+*.jsbundle
+
+# Watchman
+.watchmanconfig
+
+# Environment files
+.env
+.env.*
