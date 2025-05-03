@@ -41,9 +41,10 @@ const getProfile = async (): Promise<ResponseProfile> => {
   return data;
 };
 
-const getAccessToken = async (): Promise<ResponseProfile> => {
+const getAccessToken = async (): Promise<ResponseToken> => {
   const refreshToken = await getEncryptStorage('refreshToken');
-  const {data} = await axiosInstance.get('auth/refresh', {
+
+  const {data} = await axiosInstance.get('/auth/refresh', {
     headers: {
       Authorization: `Bearer ${refreshToken}`,
     },

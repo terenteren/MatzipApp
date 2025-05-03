@@ -17,4 +17,4 @@ const removeEncryptStorage = async (key: string) => {
   }
 };
 
-export {setEncryptStorage, getEncryptStorage};
+export {setEncryptStorage, getEncryptStorage, removeEncryptStorage};
