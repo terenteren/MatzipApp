@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     width: Dimensions.get('screen').width / 2,
   },
   image: {
-    with: '100%',
+    width: '100%',
     height: '100%',
   },
   buttonContainer: {
