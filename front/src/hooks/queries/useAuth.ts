@@ -1,27 +1,17 @@
-import {
-  useMutation,
-  UseQueryOptions,
-  useQuery,
-  QueryKey,
-} from '@tanstack/react-query';
+import {useMutation, useQuery} from '@tanstack/react-query';
 import {
   getAccessToken,
   getProfile,
   logout,
   postLogin,
   postSignup,
-} from '../../api/auth';
-import {
-  ResponseError,
-  UseMutationCustomOptions,
-  UseQueryCustomOptions,
-} from '../../types/common';
-import {removeEncryptStorage, setEncryptStorage} from '../../utils';
-import axiosInstance from '../../api/axios';
-import {removeHeader, setHeader} from '../../utils/header';
+} from '@/api/auth';
+import {UseMutationCustomOptions, UseQueryCustomOptions} from '@/types/common';
+import {removeEncryptStorage, setEncryptStorage} from '@/utils';
+import {removeHeader, setHeader} from '@/utils/header';
 import {useEffect} from 'react';
-import queryClient from '../../api/queryClient';
-import {numbers, queryKeys, storageKeys} from '../../constants';
+import queryClient from '@/api/queryClient';
+import {numbers, queryKeys, storageKeys} from '@/constants';
 
 function useSignup(mutationOptions?: UseMutationCustomOptions) {
   return useMutation({

@@ -8,9 +8,9 @@ import {
   View,
   Dimensions,
 } from 'react-native';
-import {AuthStackParamList} from '../../navigations/stack/AuthStackNavigator';
-import {authNavigations} from '../../constants/navigations';
-import CustomButton from '../../components/CustomButton';
+import {AuthStackParamList} from '@/navigations/stack/AuthStackNavigator';
+import CustomButton from '@/components/CustomButton';
+import {authNavigations} from '@/constants';
 
 type AuthHomeScreenProps = StackScreenProps<
   AuthStackParamList,
